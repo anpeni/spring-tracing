@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{values.component_id | dump}}
+  name: "config-service-02"
   # {%- if values.description %}
-  description: ${{values.description | dump}}
+  # description: ${{values.description | dump}}
   # {%- endif %}
   annotations:
-    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    github.com/project-slug: anpeni/ spring-tracing
     backstage.io/techdocs-ref: dir:.
     # grafana/overview-dashboard: 'http://grafana/d/qSfS51a4z/some-dashboard?orgId=1&kiosk'
     # grafana/alert-label-selector: "service=awesome-service"
@@ -22,4 +22,4 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: ${{values.owner | dump}}
+  owner: "group:default/guests"
